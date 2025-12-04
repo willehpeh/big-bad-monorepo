@@ -1,8 +1,8 @@
 export default {
   displayName: 'deep-badger',
-  preset: '../../jest.preset.js',
+  preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/deep-badger',
+  coverageDirectory: '../../../coverage/apps/deep-badger/frontend',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

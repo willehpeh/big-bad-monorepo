@@ -1,27 +1,33 @@
 {
   "name": "deep-badger",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/deep-badger/src",
+  "sourceRoot": "apps/deep-badger/frontend/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular/build:application",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
-        "outputPath": "dist/apps/deep-badger",
-        "browser": "apps/deep-badger/src/main.ts",
-        "polyfills": ["zone.js"],
-        "tsConfig": "apps/deep-badger/tsconfig.app.json",
+        "outputPath": "dist/apps/deep-badger/frontend",
+        "browser": "apps/deep-badger/frontend/src/main.ts",
+        "polyfills": [
+          "zone.js"
+        ],
+        "tsConfig": "apps/deep-badger/frontend/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/deep-badger/public"
+            "input": "apps/deep-badger/frontend/public"
           }
         ],
-        "styles": ["apps/deep-badger/src/styles.scss"]
+        "styles": [
+          "apps/deep-badger/frontend/src/styles.scss"
+        ]
       },
       "configurations": {
         "production": {
@@ -71,10 +77,12 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
-        "jestConfig": "apps/deep-badger/jest.config.ts",
-        "tsConfig": "apps/deep-badger/tsconfig.spec.json"
+        "jestConfig": "apps/deep-badger/frontend/jest.config.ts",
+        "tsConfig": "apps/deep-badger/frontend/tsconfig.spec.json"
       }
     },
     "serve-static": {
@@ -83,7 +91,7 @@
       "options": {
         "buildTarget": "deep-badger:build",
         "port": 4200,
-        "staticFilePath": "dist/apps/deep-badger/browser",
+        "staticFilePath": "dist/apps/deep-badger/frontend/browser",
         "spa": true
       }
     }
