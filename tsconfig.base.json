@@ -10,17 +10,24 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": [
-      "es2020",
-      "dom"
-    ],
+    "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@big-bad-monorepo/deep-badger-domain": [
+        "packages/deep-badger/domain/src/index.ts"
+      ],
+      "@big-bad-monorepo/deep-badger-application": [
+        "packages/deep-badger/application/src/index.ts"
+      ],
+      "@big-bad-monorepo/deep-badger-infrastructure": [
+        "packages/deep-badger/infrastructure/src/index.ts"
+      ],
+      "@big-bad-monorepo/deep-badger-tests": [
+        "packages/deep-badger/tests/src/index.ts"
+      ]
+    }
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  "exclude": ["node_modules", "tmp"]
 }

@@ -1,0 +1,9 @@
+{
+  "name": "deep-badger-infrastructure",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/deep-badger/infrastructure/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project deep-badger-infrastructure --web",
+  "targets": {}
+}

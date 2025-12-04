@@ -1,0 +1,16 @@
+{
+  "name": "deep-badger-tests",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/deep-badger/tests/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/deep-badger/tests/jest.config.ts"
+      }
+    }
+  }
+}
