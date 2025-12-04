@@ -1,1 +1,2 @@
-export const lib = 'deep-badger';
+export * from './event-store/persisted-event';
+

@@ -1,4 +1,4 @@
-export type StoreEvent = {
+export type PersistedEvent = {
   type: string;
   payload: unknown;
   stream: string;
