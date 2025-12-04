@@ -1,5 +1,5 @@
 {
-  "name": "deep-badger",
+  "name": "deep-badger-frontend",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
@@ -58,10 +58,10 @@
       "executor": "@angular/build:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "deep-badger:build:production"
+          "buildTarget": "deep-badger-frontend:build:production"
         },
         "development": {
-          "buildTarget": "deep-badger:build:development"
+          "buildTarget": "deep-badger-frontend:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -69,7 +69,7 @@
     "extract-i18n": {
       "executor": "@angular/build:extract-i18n",
       "options": {
-        "buildTarget": "deep-badger:build"
+        "buildTarget": "deep-badger-frontend:build"
       }
     },
     "lint": {
@@ -89,7 +89,7 @@
       "continuous": true,
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "deep-badger:build",
+        "buildTarget": "deep-badger-frontend:build",
         "port": 4200,
         "staticFilePath": "dist/apps/deep-badger/frontend/browser",
         "spa": true

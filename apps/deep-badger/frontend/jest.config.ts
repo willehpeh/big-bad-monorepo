@@ -1,5 +1,5 @@
 export default {
-  displayName: 'deep-badger',
+  displayName: 'deep-badger-frontend',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   coverageDirectory: '../../../coverage/apps/deep-badger/frontend',
