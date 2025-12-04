@@ -3,7 +3,9 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/deep-badger/tests/src",
   "projectType": "library",
-  "tags": [],
+  "tags": [
+    "@deep-badger/tests"
+  ],
   "targets": {
     "test": {
       "executor": "@nx/jest:jest",

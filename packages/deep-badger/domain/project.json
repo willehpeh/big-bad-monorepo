@@ -3,7 +3,9 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/deep-badger/domain/src",
   "projectType": "library",
-  "tags": [],
+  "tags": [
+    "@deep-badger/domain"
+  ],
   "// targets": "to see all targets run: nx show project deep-badger-domain --web",
   "targets": {}
 }

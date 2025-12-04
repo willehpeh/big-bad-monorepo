@@ -23,9 +23,6 @@
       ],
       "deep-badger/infrastructure": [
         "packages/deep-badger/infrastructure/src/index.ts"
-      ],
-      "deep-badger/tests": [
-        "packages/deep-badger/tests/src/index.ts"
       ]
     }
   },
