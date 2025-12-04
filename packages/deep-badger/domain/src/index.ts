@@ -1,1 +1,1 @@
-export * from './lib/deep-badger-domain';
+export * from './core/events/domain-event';

@@ -15,16 +15,16 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@big-bad-monorepo/deep-badger-domain": [
+      "@deep-badger/domain": [
         "packages/deep-badger/domain/src/index.ts"
       ],
-      "@big-bad-monorepo/deep-badger-application": [
+      "@deep-badger/application": [
         "packages/deep-badger/application/src/index.ts"
       ],
-      "@big-bad-monorepo/deep-badger-infrastructure": [
+      "deep-badger/infrastructure": [
         "packages/deep-badger/infrastructure/src/index.ts"
       ],
-      "@big-bad-monorepo/deep-badger-tests": [
+      "deep-badger/tests": [
         "packages/deep-badger/tests/src/index.ts"
       ]
     }

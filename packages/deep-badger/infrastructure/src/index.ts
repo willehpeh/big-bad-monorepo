@@ -1,1 +1,1 @@
-export * from './lib/deep-badger-infrastructure';
+export const lib = 'deep-badger';
